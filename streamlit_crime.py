@@ -31,14 +31,14 @@ with header:
 with model:
     st.title('Classification Algorithms')
     models = st.sidebar.selectbox('Select Classification Model', ('RNN','Transformers', 'Logistic', 'Naive Bayes','KNN'))
-    dataset = st.sidebar.selectbox('Select dataset', ("African_tweets_dataset",'African_tweets_dataset' ))
+    dataset = st.sidebar.selectbox('Select dataset', ("Kenyan_tweets_dataset",'Kenyan_tweets_dataset' ))
     st.write('Classification model : ',models)
     st.write('Dataset : ',dataset)
 
 #Loading the dataset
     def get_data(dataset_name):
 #        data = pd.read_csv('E:\pythonProject\Classified data.csv')
-        data = pd.read_excel('‪D:\crimeproject\crime-vectorised.csv')
+        data = pd.read_csv('‪D:\crimeproject\crime-vectorised.csv')
         X = data['tweet']
         y = data['class']
         return X,y
