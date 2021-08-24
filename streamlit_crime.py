@@ -37,7 +37,8 @@ with model:
 
 #Loading the dataset
     def get_data(dataset_name):
-        data = pd.read_csv('E:\pythonProject\Classified data.csv')
+#        data = pd.read_csv('E:\pythonProject\Classified data.csv')
+        data = pd.read_excel('‪D:\crimeproject\crime-vectorised.csv')
         X = data['tweet']
         y = data['class']
         return X,y
