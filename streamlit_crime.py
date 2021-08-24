@@ -3,8 +3,13 @@
 print('the begining')
 import streamlit as st
 import pandas as pd
+import pickle
 #import numpy as np
 #import sklearn
+
+#loading trained model
+pickle_in = open('classifier.pkl', 'rb')
+classifier = pickle.load(pickle_in)
 
 #Create the horizontal sections of our app
 header = st.container()
