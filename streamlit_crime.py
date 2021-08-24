@@ -2,9 +2,9 @@
 
 print('the begining')
 import streamlit as st
-import pandas as pd
-import numpy as np
-import sklearn
+#import pandas as pd
+#import numpy as np
+#import sklearn
 
 #Create the horizontal sections of our app
 header = st.container()
