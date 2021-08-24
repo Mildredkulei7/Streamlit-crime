@@ -22,10 +22,10 @@ with header:
     st.write('This is an application that classifies crime related text into various subcategories')
     col1, col2 = st.columns(2)
     with col1:
-        st.image('E:\pythonProject\Appearance - Ruby-throated Hummingbird... (1).jpg')
+        st.image('D:\crime project\crime2.jpg')
         st.button('Image 1')
     with col2:
-        st.image('E:\pythonProject\Appearance - Ruby-throated Hummingbird... (1).jpg')
+        st.image('D:\crime project\crime1.jpg')
         st.button('Image 2')
 
 with model:
